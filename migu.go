@@ -45,6 +45,7 @@ func main()  {
 	R1.h = [][]string{
 		{"timeStamp", "1596391260"},
 		{"sign", "98d131a54422139907d45f7f204ecf72"},
+		{"version", "666.666.666"},
 	}
 	r1 := Http(R1)
 	R := json.Get(r1.b, "songResultData.result").Array()
