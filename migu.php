@@ -22,7 +22,8 @@
         $url='http://jadeite.migu.cn:7090/music_search/v2/search/searchAll?isCopyright=1&isCorrect=1&pageIndex=1&pageSize='.(isset($_GET['l'])?$_GET['l']:10).'&searchSwitch='.urlencode($sS).'&text='.urlencode($_GET['s']);
         $header=array(
             'timeStamp: 1596391260',
-            'sign: 98d131a54422139907d45f7f204ecf72'
+            'sign: 98d131a54422139907d45f7f204ecf72',
+            'version: 666.66.6'
         );
         $rsp=Http($url,null,$header);
         if(!isset($_GET['r'])){
